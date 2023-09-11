@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+    <div class="form-row">
+    <form [formGroup]="addVetsForm" (ngSubmit)="update()">
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Name">
+        <option *ngFor="let Vets of EditVets" {{Vets .Name}}></option>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Speciality</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Speciality">
+        <option *ngFor="let Vets of EditVets" {{Vets .Speciality}}></option>
+      </div>
+     
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Address</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Address">
+        <option *ngFor="let Vets of EditVets" {{Vets .Address}}></option>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+  </body>

@@ -1,0 +1,31 @@
+<body>
+    <div class="container">
+    <div class="form-row">
+    <form [formGroup]="addAppointmentForm" (ngSubmit)="postUserFormData()">
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">PetName</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="PetName">
+      
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Department</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Department">
+        <option *ngFor="let Appointment of AppOiDAta" {{Appointment .Department}}></option>
+      </div>
+     
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">VetName</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="VetName">
+   
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">More Details</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="MoreDetails">
+   
+      </div>
+      <!-- <button type="submit" class="btn btn-primary ">Submit</button> -->
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+  </div>
+  </div>
+  </body>

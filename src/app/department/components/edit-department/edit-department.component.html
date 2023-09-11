@@ -1,0 +1,50 @@
+<div class="main-wrapper">
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h4 class="page-title">Add Department</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <form [formGroup]="EditDepartmentForm" (ngSubmit)="UpdateDepartmentFetch()">
+                        <div class="form-group">
+                            <label>Department Name</label>
+                            <input type="text" class="form-control" formControlName="DepartmentName">
+                           
+                        </div>
+
+
+                         
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea formControlName="Description" type="text" cols="30" rows="4"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="display-block">Department Status</label>
+                            <div class="form-check form-check-inline">
+                                <input formControlName="Active" class="form-check-input" type="radio" name="status"
+                                    id="product_active" value="Yes" checked>
+                                <label class="form-check-label" for="product_active">
+                                    Active
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input formControlName="Inactive" class="form-check-input" type="radio" name="status"
+                                    id="product_inactive" value="No">
+                                <label class="form-check-label" for="product_inactive">
+                                    Inactive
+                                </label>
+                            </div>
+                        </div>
+                        <div class="m-t-20 text-center">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

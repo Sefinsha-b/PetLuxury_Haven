@@ -1,0 +1,29 @@
+<body>
+  <div class="container">
+    <div class="form-row">
+      <form [formGroup]="addPetsForm" (ngSubmit)="postPetsFormData()">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="FirstName">
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Age</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Age">
+          <option *ngFor="let PetsAppointment of PetsDAta" {{PetsAppointment .Age}}></option>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">OwnerEmail</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="OwnerEmail">
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Gender</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Gender">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>

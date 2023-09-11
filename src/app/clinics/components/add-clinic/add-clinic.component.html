@@ -1,0 +1,94 @@
+<div class="main-wrapper">
+    <app-menu></app-menu>
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h4 class="page-title">Add Clinic</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+
+
+                    <form #ClinicForm="ngForm">
+                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Clinic Info</label>
+                                    <input class="form-control" type="text" ngModel name="Clinic Info">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>ClinicName</label>
+                                 
+                                    
+                                    
+                                    <select class="form-select" >
+                                        <option ngModel name="ClinicName"  selected>--Select Clinics--</option>
+                                        <option *ngFor = "let data of DataClinic">{{data.ClinicName}}</option>
+                                     </select> 
+                                    
+                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Clinic Location</label>
+                                    
+                                    <select class="form-select" >
+                                        <option ngModel name="Cliniclocation"  selected>--Select Location--</option>
+                                        <option *ngFor = "let data of DataClinic">{{data.Cliniclocation}}</option>
+                                     </select> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Clinic Timings</label>
+                                  
+                                    <select class="form-select" >
+                                        <option ngModel name="ClinicTimings"  selected>--Select Timing--</option>
+                                        <option *ngFor = "let data of DataClinic">{{data.ClinicTimings}}</option>
+                                     </select> 
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Clinic Contact Number</label>
+                                    <input class="form-control" type="text" ngModel name="ClinicContactNumber">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea class="form-control" ngModel name="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Status</label>
+                                    <select class="select">
+                                        <option>Pending</option>
+                                        <option>Approved</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-t-20 text-center">
+                            <button id="btncl" class="btn btn-primary submit-btn"  (click)="PostClinicFormData(ClinicForm.value)" >Add Clinic</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

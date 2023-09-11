@@ -1,0 +1,242 @@
+{
+  "Appointments": [
+    {
+      "PetName": "sxascascas",
+      "Department": "csacas",
+      "VetName": "sc",
+      "MoreDetails": "cscsdcsdcsdcsdcvsdvdvdvcdcascsdcsdcsdcsdc",
+      "id": 9
+    }
+  ],
+  "Departments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "DepartmentName": "Sefin",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 2
+    },
+    {
+      "DepartmentName": "arun",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 3
+    },
+    {
+      "DepartmentName": "abubakkar",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 4
+    },
+    {
+      "DepartmentName": "santhosh",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 5
+    },
+    {
+      "DepartmentName": "jadhav",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 6
+    },
+    {
+      "DepartmentName": "nithya",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 7
+    },
+    {
+      "DepartmentName": "pooja",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 8
+    },
+    {
+      "DepartmentName": "murshid",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 9
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 10
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 11
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 12
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 13
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 14
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 15
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 16
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 17
+    },
+    {
+      "DepartmentName": "",
+      "Description": "Hello",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 18
+    },
+    {
+      "DepartmentName": "",
+      "Description": "",
+      "Active": "",
+      "Inactive": "",
+      "id": 19
+    },
+    {
+      "DepartmentName": "",
+      "Description": "sssss",
+      "Active": "",
+      "Inactive": "option2",
+      "id": 20
+    },
+    {
+      "DepartmentName": "",
+      "Description": "asd",
+      "Active": "",
+      "Inactive": "",
+      "id": 21
+    },
+    {
+      "DepartmentName": "",
+      "Description": "asdsgf",
+      "Active": "",
+      "Inactive": "option2",
+      "id": 22
+    },
+    {
+      "DepartmentName": "radiology",
+      "Description": "asdada",
+      "Active": "option1",
+      "Inactive": "",
+      "id": 23
+    }
+  ],
+  "Vets": [
+    {
+      "Name": "Sefin",
+      "Speciality": "df",
+      "Address": "Shinu",
+      "id": 8
+    },
+    {
+      "Name": "QWXQXQX",
+      "Speciality": "",
+      "Address": "",
+      "id": 19
+    },
+    {
+      "Name": "asd",
+      "Speciality": "asd",
+      "Address": "asd",
+      "id": 20
+    },
+    {
+      "Name": "Sefin",
+      "Speciality": "Sefin",
+      "Address": "Sefin",
+      "id": 21
+    }
+  ],
+  "Pets": [
+    {
+      "FirstName": "sefinsha4@gmail.com",
+      "Age": "das",
+      "OwnerEmail": "asd",
+      "Gender": "cszc",
+      "id": 4
+    },
+    {
+      "FirstName": "sefinsha4@gmail.com",
+      "Age": "25",
+      "OwnerEmail": "sefinsha4@gmail.com",
+      "Gender": "male",
+      "id": 5
+    }
+  ],
+  "Clinic": [
+    {
+      "id": 3
+    },
+    {
+      "Clinic Info": "",
+      "ClinicName": "",
+      "Cliniclocation": "",
+      "ClinicTimings": "",
+      "ClinicContactNumber": "",
+      "Description": "",
+      "id": 4
+    },
+    {
+      "Clinic Info": "",
+      "ClinicName": "",
+      "Cliniclocation": "",
+      "ClinicTimings": "",
+      "ClinicContactNumber": "",
+      "Description": "",
+      "id": 5
+    }
+  ],
+  "Schedule": [
+    {
+      "id": 7
+    }
+  ]
+}

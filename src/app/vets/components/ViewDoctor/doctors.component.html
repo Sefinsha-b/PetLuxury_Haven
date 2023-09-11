@@ -1,0 +1,55 @@
+<div class="main-wrapper">
+    <app-menu></app-menu>
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-4 col-3">
+                    <h4 class="page-title">Vets</h4>
+                </div>
+                <div class="col-sm-8 col-9 text-right m-b-20">
+                    <a href="addVets" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Vets</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-border table-striped custom-table mb-0">
+                        <thead>
+                            <tr>
+                              
+                                <th>Name</th>
+                                <th>Speciality</th>
+                                <th>Address</th>
+                                <th>ID</th>
+
+
+                                <!-- "_id": "64f8d72a3925adf5ee141fdf",
+                                "Name": "John Doe",
+                                "Speciality": "Veterinarian",
+                                "Address": "123 Main Street", -->
+
+                            </tr>
+                        </thead>
+                        <tr *ngFor="let ViewPage of ViewVets">
+                            <td>{{ViewPage.Name}}</td>
+                            <td>{{ViewPage.Speciality}}</td>
+                            <td>{{ViewPage.Address}}</td>
+                            <td>{{ViewPage._id}}</td>
+
+                            <div>
+                                <td class="text-right">
+                                    <div class="flex-container">
+                                        <button type="submit" class="btn btn-secondary" routerLink="/Editvets/{{ViewPage._id}}">Edits</button>
+                                      
+                                        <button type="submit" class="btn btn-danger" (click)="deletevet(ViewPage)" >Delete</button>
+                                    </div>
+                                </td>
+                            </div>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

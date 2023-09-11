@@ -1,0 +1,55 @@
+<div class="main-wrapper">
+    <app-menu></app-menu>
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-5 col-5">
+                    <h4 class="page-title">Departments</h4>
+                </div>
+                <div class="col-sm-7 col-7 text-right m-b-30">
+                    <a href="addDepartment" class="btn btn-primary btn-rounded"><i class="fa fa-plus"></i> Add
+                        Department</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped custom-table mb-0 datatable">
+                            <thead>
+                                <tr>
+                                    <th>DepartmentName</th>
+                                    <th>Description</th>
+                                    <th>Active</th>
+                                    <th>ID</th>
+
+
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                           
+                            <tr *ngFor="let Viewpage of ViewDeparteData">
+
+                                <td>{{Viewpage.DepartmentName}}</td>
+                                <td>{{Viewpage.Description}}</td>
+                                <td>{{Viewpage.Active}}</td>
+                                <td>{{Viewpage._id}}</td>
+
+                             
+
+                                <div>
+                                    <td class="text-right">
+                                        <div class="flex-container">
+                                            <button type="submit" class="btn btn-secondary"
+                                                routerLink="/editDepartment/{{Viewpage._id}}">Edits</button>
+
+                                                <button type="submit" class="btn btn-danger" (click)="deletDepartment(Viewpage)" >Delete</button>
+                                        </div>
+                                    </td>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,52 @@
+<div class="main-wrapper">
+  <app-menu></app-menu>
+
+  <div class="page-wrapper">
+    <div class="content">
+      <div class="row">
+        <div class="col-sm-4 col-3">
+          <h4 class="page-title">Appointments</h4>
+        </div>
+        <div class="col-sm-8 col-9 text-right m-b-20">
+          <a href="addAppointments" class="btn btn-primary btn-rounded float-right text-light"><i
+              class="fa fa-plus"></i> Add Appointments</a>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="table-responsive">
+                  <table class="table table-border table-striped custom-table mb-0">
+                      <thead>
+                          <tr>
+                              <th>PetName</th>
+                              <th>Department</th>
+                              <th>VetName</th>
+                              <th>MoreDetails</th>
+                              <th>ID</th>
+
+                          </tr>
+                      </thead>
+                      <tr *ngFor="let ViewpageAppoint of ViewAppo">
+                      
+                          <td>{{ViewpageAppoint.PetName}}</td>
+                          <td>{{ViewpageAppoint.Department}}</td>
+                          <td>{{ViewpageAppoint.VetName}}</td>
+                          <td>{{ViewpageAppoint.MoreDetails}}</td>
+                          <td>{{ViewpageAppoint._id}}</td>
+
+
+                          <div>
+                              <td class="text-right">
+                                  <div class="flex-container">
+                                      <button type="submit" class="btn btn-secondary" routerLink="/Editappointment/{{ViewpageAppoint._id}}">Edits</button>
+                                    
+                                      <button type="submit" class="btn btn-danger" (click)="DeleteAppointment(ViewpageAppoint)" >Delete</button>
+                                  </div>
+                              </td>
+                          </div>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
