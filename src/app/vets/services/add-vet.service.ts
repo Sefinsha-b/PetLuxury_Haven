@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -9,10 +10,10 @@ export class AddVetService {
 
   constructor(private http: HttpClient) { }
 
-  Url: string = 'http://localhost:3000/vets/vet_in'; // Removed the trailing slash
+  Url: string = 'https://petappserver.onrender.com/vets/vet_in'; // Updated to the new API URL
 
   PostVetApi(data: any) {
-    return this.http.post(`${this.Url}`, data); // Removed the extra slash
+    return this.http.post(`${this.Url}`, data);
   }
   
   GetVetApi() {
@@ -20,7 +21,7 @@ export class AddVetService {
   }
 
   GetPutVet(id: any) {
-    return this.http.get(`${this.Url}/${id}`); // Corrected the URL
+    return this.http.get(`${this.Url}/${id}`);
   }
 
   PutVet(id: any, data: any) {
@@ -32,21 +33,15 @@ export class AddVetService {
         })
       );
   }
+  
   deleteData(id: any) {
     if (id) {
       const url = `${this.Url}/${id}`;
       console.log('DELETE URL:', url);
       return this.http.delete(url);
     } else {
-      // Handle the case where id is undefined or falsy
       console.error('Invalid id:', id);
-      return throwError('Invalid id'); // You can use throwError or return an observable with an error
+      return throwError('Invalid id');
     }
   }
-  
-
-  
-  
-  }
-  
-
+}

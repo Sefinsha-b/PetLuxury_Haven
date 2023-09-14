@@ -127,10 +127,12 @@
                 <td class="text-right">
                   <div class="flex-container">
                     <button type="submit" class="btn btn-secondary"
-                    routerLink="/Editpets/{{ViewPage._id}}">Edits</button>
+                      routerLink="/Editpets/{{ViewPage._id}}">Edits</button>
 
-                     <button type="submit" class="btn btn-danger"
-                      (click)="DeletePet(ViewPage)">Delete</button> 
+                    <!-- <button type="submit" class="btn btn-danger"
+                      (click)="DeletePet(ViewPage)">Delete</button>  -->
+
+                    <button type="submit" class="btn btn-danger" (click)="deletePet(ViewPage)">Delete</button>
                   </div>
                 </td>
               </div>

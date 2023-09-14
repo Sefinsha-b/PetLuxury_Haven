@@ -6,33 +6,29 @@ import { Injectable } from '@angular/core';
 })
 export class AddPetsService {
 
-  constructor (private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  url: string =  'http://localhost:3000/Pets/';
+  // Update the URL to the production backend
+  url: string = 'https://petappserver.onrender.com/Pets/Pet_in';
 
-
-  PostPetsApi(data:any){
-    return this.http.post(this.url+"/Pet_in",data);
-  }
-  GetPetsApi(){
-    return this.http.get<any>(this.url+"/Pet_in");
-
+  PostPetsApi(data: any) {
+    return this.http.post(this.url, data);
   }
 
-  //Put
-  PutGetPetApService(id:any){
-  return this.http.get(`${this.url + '/Pet_in'}/${id}`)
-  }
-  PutPetsApiService(id:any,data:any){
-    return this.http.put(`${this.url + '/Pet_in'}/${id}`, data)
+  GetPetsApi() {
+    return this.http.get<any>(this.url);
   }
 
- 
-
-
-
-  DeletePetService(id:any){
-    return this.http.delete(this.url + '/Pet_in/' + id)
-  }
+  // Get a single pet
+  PutGetPetApService(id: any) {
+    return this.http.get(`${this.url}/${id}`);
   }
 
+  PutPetsApiService(id: any, data: any) {
+    return this.http.put(`${this.url}/${id}`, data);
+  }
+
+  deletePet(id: any) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
+}
