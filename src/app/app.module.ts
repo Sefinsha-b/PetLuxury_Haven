@@ -59,7 +59,8 @@ import { VetsModule } from './vets/vets.module';
     AddpetsComponent,
     ViewPetComponent,
     EditPetComponent,
-    EditDepartmentComponent
+    EditDepartmentComponent,
+   
   
    
     
