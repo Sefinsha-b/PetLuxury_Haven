@@ -1,23 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { LoginComponent } from './shared/login/login.component';
 import { SignupComponent } from './shared/signup/signup.component';
-
 import { AllAppointmentsComponent } from './appointments/components/view-appointment/all-appointments.component';
 import { AddAppointmentComponent } from './appointments/components/add-appointment/add-appointment.component';
 import { DoctorsComponent } from './vets/components/ViewDoctor/doctors.component';
 import { AddDoctorComponent } from './vets/components/add-doctor/add-doctor.component';
-
-
 import { HeaderComponent } from './shared/header/header.component';
-
-
-
-
 import { ClinicInformationComponent } from './clinics/components/clinic-information/clinic-information.component';
 import { AddClinicComponent } from './clinics/components/add-clinic/add-clinic.component';
 import { AddDepartmentsComponent } from './department/components/add-departments/add-departments.component';
@@ -60,23 +52,15 @@ import { VetsModule } from './vets/vets.module';
     ViewPetComponent,
     EditPetComponent,
     EditDepartmentComponent,
-   
-  
-   
-    
-    
-   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AppiontmentsModule,FormsModule
-    ,ReactiveFormsModule,
+    AppiontmentsModule,
+    FormsModule,
+    ReactiveFormsModule,
     VetsModule
-
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
